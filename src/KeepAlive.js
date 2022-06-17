@@ -44,7 +44,6 @@ export class AliveScope extends Component {
   }
 }
 
-@withScope
 class KeepAlive extends Component {
   constructor(props) {
     super(props)
@@ -67,4 +66,4 @@ class KeepAlive extends Component {
   }
 }
 
-export default KeepAlive
+export default withScope(KeepAlive)
